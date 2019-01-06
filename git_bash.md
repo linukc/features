@@ -38,10 +38,10 @@ git add <file>
 git reset HEAD <file>  
 git checkout <file>  
 ### Cancelling commits  
-<h3>Change file<h3>  
+Change file 
 git add <file>  
 git commit -m "Message commit"  
-git revert HEAD (add the commmit which cancel HEAD commit) <h3>or<h3>  
+git revert HEAD (add the commmit which cancel HEAD commit) or  
 git revert <hash> (if want leave editor press "esc" + input ":wq")  
 ### Removing a commit from a branch  
 git reset --hard <tag> 
