@@ -30,10 +30,10 @@ git checkout <tag>
 git tag
 git history master --all  
 ### Cancel local changes (before staging)  
-<h3>Change file<h3>  
+Change file  
 git checkout <file>  
 ### Cancel Staged changes (before committing)  
-<h3>Change file<h3>  
+Change file  
 git add <file>  
 git reset HEAD <file>  
 git checkout <file>  
