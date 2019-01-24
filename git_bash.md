@@ -52,19 +52,19 @@ git history --all
 ### Delete tag  
 git tag -d \<tag\>  
 ### Change last commit (don't create new commit)  
-git add \<file>  
+git add \<file\>  
 git commit --amend -m "Add an author/email comment"  
 ### Move file  
-git mv \<file> <dir\>  
+git mv \<file\> \<dir\>  
 ### Сreate the branch  
-git branch \<name>\  
-git checkout \<name>\ (switch to branch)  
+git branch \<name\>  
+git checkout \<name\> (switch to branch)  
 ### Branch merge (rebase!)    
-git merge \<branch>\  
+git merge \<branch\>  
 ### Rebase branch (merge!)  
-git rebase \<branch>\  
+git rebase \<branch\>  
 ### Branch reset  
-git reset --hard \<hash>\  
+git reset --hard \<hash\>  
 ### Change push url  
 git remote -v  
 View existing remotes  
