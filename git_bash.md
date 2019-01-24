@@ -26,10 +26,10 @@ git checkout master (return to latest version)
 ### Print file
 git cat <file>
 ### Tagging versions  
-git tag <name>
+git tag <name>  
 git checkout <name>^ (the first version prior to <name>)    
-git checkout <tag>
-git tag
+git checkout <tag>  
+git tag  
 git history master --all  
 ### Cancel local changes (before staging)  
 Change file  
