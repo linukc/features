@@ -24,29 +24,29 @@ git history (git config --global alias.history "log --pretty=format:'%h %ad | %s
 git checkout \<hash\>  
 git checkout master (return to latest version) 
 ### Print file
-git cat <file>
+git cat \<file\>
 ### Tagging versions  
 git tag    
-git checkout <name>^ (the first version prior to <name>)    
-git checkout <tag>  
-git tag <name>  
+git checkout \<name\>^ (the first version prior to <name>)    
+git checkout \<tag\>  
+git tag \<name\>  
 git history master --all  
 ### Cancel local changes (before staging)  
 Change file  
-git checkout <file>  
+git checkout \<file\>  
 ### Cancel Staged changes (before committing)  
 Change file  
-git add <file>  
-git reset HEAD <file>  
-git checkout <file>  
+git add \<file\>  
+git reset HEAD \<file\>  
+git checkout \<file\>  
 ### Cancelling commits  
 Change file 
-git add <file>  
+git add \<file\>  
 git commit -m "Message commit"  
 git revert HEAD (add the commmit which cancel HEAD commit) or  
-git revert <hash> (if want leave editor press "esc" + input ":wq")  
+git revert \<hash\> (if want leave editor press "esc" + input ":wq")  
 ### Removing a commit from a branch  
-git reset --hard <tag> 
+git reset --hard \<tag\> 
 git history --all  
 (if we give tag to the last commit after this operation we can whatever see   
 the "delete" commit because he is still in repository)
