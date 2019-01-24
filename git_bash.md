@@ -55,8 +55,11 @@ git tag -d \<tag\>
 git add \<file>  
 git commit --amend -m "Add an author/email comment"  
 ### Move file  
-git mv \<file> <dir\>
-### Change push url
+git mv \<file> <dir\>  
+### Сreate the branch  
+git branch \<name>\  
+git checkout \<name>\ (switch to branch)
+### Change push url  
 git remote -v  
 View existing remotes  
 origin  https://github.com/user/repo.git (fetch)  
