@@ -60,11 +60,28 @@ git mv \<file\> \<dir\>
 git branch \<name\>  
 git checkout \<name\> (switch to branch)  
 ### Branch merge (rebase!)    
-git merge \<branch\>  
+git merge \<branch\>  (better for public using)  
 ### Rebase branch (merge!)  
-git rebase \<branch\>  
+git rebase \<branch\> (rewrite commit history)  
 ### Branch reset  
 git reset --hard \<hash\>  
+### Clone repo  
+git clone \<repo_name_from\> \<new_repo_name\>  
+git remote (list of remote repo)  
+git remote show origin  
+### Branch  
+git branch (view local branch)  
+git branch -a (view all branch)  
+### Fetch commit to clone repo (1)    
+git fetch  
+### Merge fetch commit (2)  
+git merge origin/master  
+(1) and (2) is equivalent to  
+### git pull  
+### Add local branch, which track origin branch  
+git branch --track \<branch_name\> \<branch_name_from\>  
+### Bare repo  
+
 ### Change push url  
 git remote -v  
 View existing remotes  
