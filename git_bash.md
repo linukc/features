@@ -3,7 +3,7 @@
 * <https://github.com/splincode/habrahabr-articles/tree/master/git>
 * <http://johnatten.com/2012/09/08/basic-git-command-line-reference-for-windows-users/>
 ## Manual
-* [extensive guide](https://git-scm.com/book/ru/v1/Основы-Git-Создание-Git-репозитория)
+* [extensive guide](https://git-scm.com/book/ru/v1/ГЋГ±Г­Г®ГўГ»-Git-Г‘Г®Г§Г¤Г Г­ГЁГҐ-Git-Г°ГҐГЇГ®Г§ГЁГІГ®Г°ГЁГї)
 * [basic instructions](https://proglib.io/p/git-for-half-an-hour/)
 * [nicely done](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
 * [great servies](https://githowto.com/ru/)
@@ -22,7 +22,9 @@ git log
 git history (git config --global alias.history "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short")  
 ### Getting older versions  
 git checkout <hash>  
-git checkout master (return to latest version)  
+git checkout master (return to latest version) 
+### Print file
+git cat <file>
 ### Tagging versions  
 git tag <name>
 git checkout <name>^ (the first version prior to <name>)  
