@@ -37,8 +37,9 @@ git checkout \<file\>
 ### Cancel Staged changes (before committing)  
 Change file  
 git add \<file\>  
-git reset HEAD \<file\>  
-git checkout \<file\>  
+git reset HEAD \<file\> (The reset command resets the buffer to HEAD. This clears the buffer zone from the changes we just indexed.  
+The reset command (the default) does not change the working directory. Therefore, the working directory still contains an unwanted   comment. We can use the checkout command to remove unwanted changes in the working directory.)  
+git checkout \<file\>    
 ### Cancelling commits (it is also commit)    
 Change file  
 git add \<file\>  
