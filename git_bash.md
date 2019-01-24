@@ -27,7 +27,7 @@ git checkout master (return to latest version)
 git cat <file>
 ### Tagging versions  
 git tag <name>
-git checkout <name>^ (the first version prior to <name>)  
+git checkout <name>^ (the first version prior to <name>)    
 git checkout <tag>
 git tag
 git history master --all  
