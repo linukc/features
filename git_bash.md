@@ -39,11 +39,11 @@ Change file
 git add \<file\>  
 git reset HEAD \<file\>  
 git checkout \<file\>  
-### Cancelling commits  
+### Cancelling commits (it is also commit)    
 Change file  
 git add \<file\>  
 git commit -m "Message commit"  
-git revert HEAD (+ add message; if want leave editor press "esc" + input ":wq";--no-edit without editor) or  
+git revert HEAD (+ add commit message; if want leave editor press "esc" + input ":wq";--no-edit without editor) or  
 git revert \<hash\>    
 ### Removing a commit from a branch  
 git reset --hard \<tag\> 
