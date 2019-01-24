@@ -46,8 +46,8 @@ git commit -m "Message commit"
 git revert HEAD (+ add commit message; if want leave editor press "esc" + input ":wq";--no-edit without editor) or  
 git revert \<hash\>    
 ### Removing a commit from a branch  
-git reset --hard \<tag\> 
-git history --all  
+git reset --hard \<tag\>  
+git history --all   
 (if we give tag to the last commit after this operation we can whatever see   
 the "delete" commit because he is still in repository)
 ### Change push url
