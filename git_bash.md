@@ -21,7 +21,7 @@ git status
 git log  
 git history (git config --global alias.history "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short")  
 ### Getting older versions  
-git checkout <hash>  
+git checkout /<hash/>  
 git checkout master (return to latest version) 
 ### Print file
 git cat <file>
