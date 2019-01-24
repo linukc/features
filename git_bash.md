@@ -58,7 +58,13 @@ git commit --amend -m "Add an author/email comment"
 git mv \<file> <dir\>  
 ### Сreate the branch  
 git branch \<name>\  
-git checkout \<name>\ (switch to branch)
+git checkout \<name>\ (switch to branch)  
+### Branch merge (rebase!)    
+git merge \<branch>\  
+### Rebase branch (merge!)  
+git rebase \<branch>\  
+### Branch reset  
+git reset --hard \<hash>\  
 ### Change push url  
 git remote -v  
 View existing remotes  
