@@ -49,6 +49,13 @@ git revert \<hash\>
 git reset --hard \<tag\>  
 git history --all   
 (if we tag commit before delete we can whatever see the "delete" commit because he is still in repository with git history --all)  
+### Delete tag  
+git tag -d \<tag\>  
+### Change last commit (don't create new commit)  
+git add \<file>  
+git commit --amend -m "Add an author/email comment"  
+### Move file  
+git mv \<file> <dir\>
 ### Change push url
 git remote -v  
 View existing remotes  
