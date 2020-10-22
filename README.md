@@ -1,1 +1,1 @@
-This repository helps me memorise better the special features of the programms, that i often use.
+This repository helps me memorise programs special features.
