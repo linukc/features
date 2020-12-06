@@ -3,6 +3,7 @@
 * <https://github.com/splincode/habrahabr-articles/tree/master/git>
 * <http://johnatten.com/2012/09/08/basic-git-command-line-reference-for-windows-users/>
 ## Manual
+* [from ya_luc](http://marklodato.github.io/visual-git-guide/index-ru.html)
 * [extensive guide](https://git-scm.com/book/ru/v1/Îñíîâû-Git-Ñîçäàíèå-Git-ðåïîçèòîðèÿ)
 * [basic instructions](https://proglib.io/p/git-for-half-an-hour/)
 * [nicely done](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
