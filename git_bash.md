@@ -72,7 +72,9 @@ git remote show origin
 ### Branch  
 git branch (view local branch)  
 git branch -a (view all branch)  
-### Fetch commit to clone repo (1)    
+### Fetch commit to clone repo (1)
+<img src="nWYnQ.png">
+
 git fetch  
 ### Merge fetch commit (2)  
 git merge origin/master  
