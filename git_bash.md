@@ -96,7 +96,10 @@ Change the 'origin' remote URL
 git remote -v  
 Verify new remote URL  
 origin  https://github.com/user/repo2.git (fetch)  
-origin  https://github.com/user/repo2.git (push)  
+origin  https://github.com/user/repo2.git (push) 
+
+### GitHubFlow
+<img src="Screenshot from 2020-12-06 23-15-43.png">
 
 
 
