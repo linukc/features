@@ -99,7 +99,9 @@ origin  https://github.com/user/repo2.git (fetch)
 origin  https://github.com/user/repo2.git (push) 
 
 ### GitHubFlow
+
 https://guides.github.com/introduction/flow/
+
 <img src="Screenshot from 2020-12-06 23-15-43.png">
 
 
