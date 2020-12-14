@@ -5,6 +5,8 @@
 Commands:
 
 delete all <none> image **docker rmi $(docker images -f "dangling=true" -q)**
+  
 delete all containers **docker rm $(docker ps -a -q)**
+
 delete all images **docker rmi $(docker images -a -q)**
 
