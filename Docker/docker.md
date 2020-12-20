@@ -4,6 +4,8 @@
 
 -Для nvidia нужно провести на хост предустановку (https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker)
 
+- Cache for multi-stage build (https://pythonspeed.com/articles/faster-multi-stage-builds/)
+
 Commands:
 
 delete all <none> image **docker rmi $(docker images -f "dangling=true" -q)**
