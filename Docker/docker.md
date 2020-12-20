@@ -8,6 +8,8 @@
 
 - Saving pip install from previous stage (https://pythonspeed.com/articles/multi-stage-docker-python/)
 
+- Jetson + dont forget set nvidia as druntime in daemon.json after installing nvidia container runtime (https://dev.to/caelinsutch/running-docker-containers-for-the-nvidia-jetson-nano-5a06)
+
 Commands:
 
 delete all <none> image **docker rmi $(docker images -f "dangling=true" -q)**
