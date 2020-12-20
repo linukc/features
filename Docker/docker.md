@@ -6,6 +6,8 @@
 
 - Cache for multi-stage build (https://pythonspeed.com/articles/faster-multi-stage-builds/)
 
+- Saving pip install from previous stage (https://pythonspeed.com/articles/multi-stage-docker-python/)
+
 Commands:
 
 delete all <none> image **docker rmi $(docker images -f "dangling=true" -q)**
