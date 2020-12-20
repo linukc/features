@@ -2,7 +2,7 @@
 
 - Dockerfile example https://github.com/pytorch/pytorch/blob/master/docker/pytorch/Dockerfile
 
--Для nvidia нужно провести на хост предустановку (https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker)
+- Для nvidia нужно провести на хост предустановку (https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker)
 
 - Cache for multi-stage build (https://pythonspeed.com/articles/faster-multi-stage-builds/)
 
