@@ -1,0 +1,102 @@
+\hypertarget{classVMonoCalibrator}{
+\section{VMonoCalibrator Class Reference}
+\label{classVMonoCalibrator}\index{VMonoCalibrator@{VMonoCalibrator}}
+}
+
+
+{\ttfamily \#include $<$v\_\-mono\_\-calibrator.h$>$}
+
+Inheritance diagram for VMonoCalibrator:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classVMonoCalibrator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classVMonoCalibrator_a026938d74f2c8c2c6df06f8e50270b16}{tryFrame} (cv::Mat \&frame)
+\item 
+void \hyperlink{classVMonoCalibrator_a041c63fcebcf35b1277027c0d18a7d47}{getHomography} (cv::Mat \&H) const 
+\item 
+void \hyperlink{classVMonoCalibrator_a0acebdd3d00dcf56a5bbb119f6572ba8}{getIntrinsics} (cv::Mat \&M, cv::Mat \&D) const 
+\item 
+void \hyperlink{classVMonoCalibrator_a1a3aa1b57538d2bfd993ecf8c0b2e4fd}{getExtrinsics} (cv::Mat \&R, cv::Mat \&T) const 
+\item 
+virtual void \hyperlink{classVMonoCalibrator_ab3b2f7b28e77094385046d9eb53569ce}{setRequiredFramesCount} (size\_\-t count, int squareLength)
+\item 
+virtual bool \hyperlink{classVMonoCalibrator_a16cdc1f9c47d6437a124bd5f5a4ec426}{calibrate} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for calibrating one camera using chessboard.
+
+\begin{DoxyAuthor}{Author}
+Dmitry Suvorov 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classVMonoCalibrator_a16cdc1f9c47d6437a124bd5f5a4ec426}{
+\index{VMonoCalibrator@{VMonoCalibrator}!calibrate@{calibrate}}
+\index{calibrate@{calibrate}!VMonoCalibrator@{VMonoCalibrator}}
+\subsubsection[{calibrate}]{\setlength{\rightskip}{0pt plus 5cm}bool VMonoCalibrator::calibrate ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classVMonoCalibrator_a16cdc1f9c47d6437a124bd5f5a4ec426}
+Calculate parameters. \begin{DoxyReturn}{Returns}
+True on success. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classVAbstractCalibrator_a7251a0da257534695adcec223d467835}{VAbstractCalibrator}.
+
+\hypertarget{classVMonoCalibrator_a1a3aa1b57538d2bfd993ecf8c0b2e4fd}{
+\index{VMonoCalibrator@{VMonoCalibrator}!getExtrinsics@{getExtrinsics}}
+\index{getExtrinsics@{getExtrinsics}!VMonoCalibrator@{VMonoCalibrator}}
+\subsubsection[{getExtrinsics}]{\setlength{\rightskip}{0pt plus 5cm}void VMonoCalibrator::getExtrinsics (cv::Mat \& {\em R}, \/  cv::Mat \& {\em T}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classVMonoCalibrator_a1a3aa1b57538d2bfd993ecf8c0b2e4fd}
+Get extrinsics camera's parameters. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em R}]Rotation vector. \item[\mbox{$\rightarrow$} {\em T}]Translation vector. \end{DoxyParams}
+\hypertarget{classVMonoCalibrator_a041c63fcebcf35b1277027c0d18a7d47}{
+\index{VMonoCalibrator@{VMonoCalibrator}!getHomography@{getHomography}}
+\index{getHomography@{getHomography}!VMonoCalibrator@{VMonoCalibrator}}
+\subsubsection[{getHomography}]{\setlength{\rightskip}{0pt plus 5cm}void VMonoCalibrator::getHomography (cv::Mat \& {\em H}) const}}
+\label{classVMonoCalibrator_a041c63fcebcf35b1277027c0d18a7d47}
+Get Homography(transformation matrix from camera's coordinates to image coordinates). 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em H}]Matrix 4x3. \end{DoxyParams}
+\hypertarget{classVMonoCalibrator_a0acebdd3d00dcf56a5bbb119f6572ba8}{
+\index{VMonoCalibrator@{VMonoCalibrator}!getIntrinsics@{getIntrinsics}}
+\index{getIntrinsics@{getIntrinsics}!VMonoCalibrator@{VMonoCalibrator}}
+\subsubsection[{getIntrinsics}]{\setlength{\rightskip}{0pt plus 5cm}void VMonoCalibrator::getIntrinsics (cv::Mat \& {\em M}, \/  cv::Mat \& {\em D}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classVMonoCalibrator_a0acebdd3d00dcf56a5bbb119f6572ba8}
+Get intisics camera's parameters. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em M}]Camera's matrix. \item[\mbox{$\rightarrow$} {\em D}]Distortion coefficients. \end{DoxyParams}
+\hypertarget{classVMonoCalibrator_ab3b2f7b28e77094385046d9eb53569ce}{
+\index{VMonoCalibrator@{VMonoCalibrator}!setRequiredFramesCount@{setRequiredFramesCount}}
+\index{setRequiredFramesCount@{setRequiredFramesCount}!VMonoCalibrator@{VMonoCalibrator}}
+\subsubsection[{setRequiredFramesCount}]{\setlength{\rightskip}{0pt plus 5cm}void VMonoCalibrator::setRequiredFramesCount (size\_\-t {\em count}, \/  int {\em squareLength})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classVMonoCalibrator_ab3b2f7b28e77094385046d9eb53569ce}
+Set number of chessboard's views required for calibration. param\mbox{[}in\mbox{]} count Number of chessboard's views required for calibration. param\mbox{[}in\mbox{]} squareLength Length in mm of one chessboard's square. 
+
+Reimplemented from \hyperlink{classVAbstractCalibrator_a2c6ac60861d16f185930e7fbf09483f8}{VAbstractCalibrator}.
+
+\hypertarget{classVMonoCalibrator_a026938d74f2c8c2c6df06f8e50270b16}{
+\index{VMonoCalibrator@{VMonoCalibrator}!tryFrame@{tryFrame}}
+\index{tryFrame@{tryFrame}!VMonoCalibrator@{VMonoCalibrator}}
+\subsubsection[{tryFrame}]{\setlength{\rightskip}{0pt plus 5cm}int VMonoCalibrator::tryFrame (cv::Mat \& {\em frame})}}
+\label{classVMonoCalibrator_a026938d74f2c8c2c6df06f8e50270b16}
+Try to detect chessboard's corners. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em frame}]Image with chessboard. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of frames to grab before starting calibration. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{v__mono__calibrator_8h}{v\_\-mono\_\-calibrator.h}\item 
+v\_\-mono\_\-calibrator.cpp\end{DoxyCompactItemize}

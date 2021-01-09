@@ -1,0 +1,102 @@
+\hypertarget{classVStereoCalibrator}{
+\section{VStereoCalibrator Class Reference}
+\label{classVStereoCalibrator}\index{VStereoCalibrator@{VStereoCalibrator}}
+}
+
+
+{\ttfamily \#include $<$v\_\-stereo\_\-calibrator.h$>$}
+
+Inheritance diagram for VStereoCalibrator:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classVStereoCalibrator}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classVStereoCalibrator_a2a31c8af7740705eda798588a5311fb7}{CameraSide} \{ {\bfseries LEFT\_\-CAMERA}, 
+{\bfseries RIGHT\_\-CAMERA}
+ \}
+\begin{DoxyCompactList}\small\item\em Camera's position in the stereo system. \item\end{DoxyCompactList}\item 
+enum \{ {\bfseries CAMERAS\_\-COUNT} =  2
+ \}
+\begin{DoxyCompactList}\small\item\em Count of cameras in the stereo system. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classVStereoCalibrator_a99cf01815e1a586f39f3da5d8d37848f}{
+void \hyperlink{classVStereoCalibrator_a99cf01815e1a586f39f3da5d8d37848f}{getCamerasIntrinsics} (int side, cv::Mat \&M, cv::Mat \&D) const }
+\label{classVStereoCalibrator_a99cf01815e1a586f39f3da5d8d37848f}
+
+\begin{DoxyCompactList}\small\item\em Get intrinsics parameters of one camera. \item\end{DoxyCompactList}\item 
+\hypertarget{classVStereoCalibrator_a00919cac74070cd925bfe8e05046a44a}{
+void \hyperlink{classVStereoCalibrator_a00919cac74070cd925bfe8e05046a44a}{getEssentialMatrix} (cv::Mat \&E) const }
+\label{classVStereoCalibrator_a00919cac74070cd925bfe8e05046a44a}
+
+\begin{DoxyCompactList}\small\item\em Get essential matrix. \item\end{DoxyCompactList}\item 
+\hypertarget{classVStereoCalibrator_aebd902a53410b7a9a4df570fcd5245c0}{
+void \hyperlink{classVStereoCalibrator_aebd902a53410b7a9a4df570fcd5245c0}{getFundamentalMatrix} (cv::Mat \&F) const }
+\label{classVStereoCalibrator_aebd902a53410b7a9a4df570fcd5245c0}
+
+\begin{DoxyCompactList}\small\item\em Get fundamental matrix. \item\end{DoxyCompactList}\item 
+\hypertarget{classVStereoCalibrator_a4d61328f70d43a5414f5e9a53ffd642b}{
+void \hyperlink{classVStereoCalibrator_a4d61328f70d43a5414f5e9a53ffd642b}{getCamerasOrientation} (cv::Mat \&R, cv::Mat \&T) const }
+\label{classVStereoCalibrator_a4d61328f70d43a5414f5e9a53ffd642b}
+
+\begin{DoxyCompactList}\small\item\em Get the rotation matrix and translation vector between the cameras. \item\end{DoxyCompactList}\item 
+int \hyperlink{classVStereoCalibrator_ac080bd54496fef9b9e115944ddc3ca34}{tryFrames} (cv::Mat \&leftFrame, cv::Mat \&rightFrame)
+\item 
+virtual void \hyperlink{classVStereoCalibrator_a48004bae492ead13c14f0810b74bc4d0}{setRequiredFramesCount} (size\_\-t count, int squareLength)
+\item 
+virtual bool \hyperlink{classVStereoCalibrator_a7754bdddf997110220fedb2a222001ee}{calibrate} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for calibrating stereo system using chessboard.
+
+\begin{DoxyAuthor}{Author}
+Dmitry Suvorov 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classVStereoCalibrator_a7754bdddf997110220fedb2a222001ee}{
+\index{VStereoCalibrator@{VStereoCalibrator}!calibrate@{calibrate}}
+\index{calibrate@{calibrate}!VStereoCalibrator@{VStereoCalibrator}}
+\subsubsection[{calibrate}]{\setlength{\rightskip}{0pt plus 5cm}bool VStereoCalibrator::calibrate ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classVStereoCalibrator_a7754bdddf997110220fedb2a222001ee}
+Calculate parameters. \begin{DoxyReturn}{Returns}
+True on success. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classVAbstractCalibrator_a7251a0da257534695adcec223d467835}{VAbstractCalibrator}.
+
+\hypertarget{classVStereoCalibrator_a48004bae492ead13c14f0810b74bc4d0}{
+\index{VStereoCalibrator@{VStereoCalibrator}!setRequiredFramesCount@{setRequiredFramesCount}}
+\index{setRequiredFramesCount@{setRequiredFramesCount}!VStereoCalibrator@{VStereoCalibrator}}
+\subsubsection[{setRequiredFramesCount}]{\setlength{\rightskip}{0pt plus 5cm}void VStereoCalibrator::setRequiredFramesCount (size\_\-t {\em count}, \/  int {\em squareLength})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classVStereoCalibrator_a48004bae492ead13c14f0810b74bc4d0}
+Set number of chessboard's views required for calibration. param\mbox{[}in\mbox{]} count Number of chessboard's views required for calibration. param\mbox{[}in\mbox{]} squareLength Length in mm of one chessboard's square. 
+
+Reimplemented from \hyperlink{classVAbstractCalibrator_a2c6ac60861d16f185930e7fbf09483f8}{VAbstractCalibrator}.
+
+\hypertarget{classVStereoCalibrator_ac080bd54496fef9b9e115944ddc3ca34}{
+\index{VStereoCalibrator@{VStereoCalibrator}!tryFrames@{tryFrames}}
+\index{tryFrames@{tryFrames}!VStereoCalibrator@{VStereoCalibrator}}
+\subsubsection[{tryFrames}]{\setlength{\rightskip}{0pt plus 5cm}int VStereoCalibrator::tryFrames (cv::Mat \& {\em leftFrame}, \/  cv::Mat \& {\em rightFrame})}}
+\label{classVStereoCalibrator_ac080bd54496fef9b9e115944ddc3ca34}
+Try to detect chessboard's corners. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em frame}]Image with chessboard. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of frames to grab before starting calibration. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{v__stereo__calibrator_8h}{v\_\-stereo\_\-calibrator.h}\item 
+v\_\-stereo\_\-calibrator.cpp\end{DoxyCompactItemize}
