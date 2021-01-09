@@ -5,3 +5,4 @@
 3. [Matlab code with comments](https://www.mathworks.com/help/vision/ug/measuring-planar-objects-with-a-calibrated-camera.html;jsessionid=451e6978b66953a415c2510a7c92)
 4. [Theory in images](https://docs.exponenta.ru/vision/ug/camera-calibration.html)
 5. [Kinect calibration example](https://habr.com/ru/post/272629/)
+6. [CameraTransform:A Python package for perspective corrections and image mapping](https://www.researchgate.net/publication/336247420_CameraTransform_A_Python_package_for_perspective_corrections_and_image_mapping)
