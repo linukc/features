@@ -1,3 +1,7 @@
+# y in ycc equal to grayscale
+#Gaussian blur reduce noise
+#Equalize improve quality
+
 import cv2
 import numpy as np
 
