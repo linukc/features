@@ -22,6 +22,8 @@ delete all images **docker rmi $(docker images -a -q)**
 
 [none:none images](https://habr.com/ru/post/304134/)
 
+docker images prune
+
 useful for attaching datasets to docker container **docker run -ti -v ~/Downloads/datasets:/datasets --rm --runtime nvidia <image>**
 
 You can accelerate the build of the docker image with --build-arg NUM_THREADS=number of parallel builds
