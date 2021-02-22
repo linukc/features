@@ -28,3 +28,5 @@ python -m pdb test.py
   - c (continue): jump to next breakpoint
   - clear 'bp id': delete certain bp
   - enable/ disable 'bp id': switch bp behavior
+
+Pressing Enter repeats last command.
