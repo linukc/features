@@ -6,7 +6,7 @@ python -m pdb test.py
   - n (next): one step
   - s (step): step into
   - u/d (up, down): movements along the stack 
-  - j 'line' (jump): jump to line of code
+  - j 'line' (jump): jump to line and skip code
 2. Orientation
   - l (list): show 10 lines of code
   - source 'object': show instanse of module, class, method, function ...
