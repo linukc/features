@@ -21,12 +21,13 @@ python -m pdb test.py
   - display 'name' / undisplay 'name': print value each time (mb for loop useful)
  4. Execute
   - !'code': perform code
-  - interacte: interactive mode (ctrl+D for exit())
+  - interacte: interactive mode (ctrl+D for exit)
  5. Breakpoints (bp)
   - b: show list of breakpoints
-  - b 'line': set breakpoint
+  - b 'line': set breakpoint (b 'path from traceback':'line number'; b(reak) [[filename:]lineno | function[, condition]])
   - c (continue): jump to next breakpoint
   - clear 'bp id': delete certain bp
   - enable/ disable 'bp id': switch bp behavior
 
-Pressing Enter repeats last command.
+Tips:
+  - Pressing Enter repeats last command.
