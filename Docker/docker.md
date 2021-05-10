@@ -28,3 +28,5 @@ useful for attaching datasets to docker container **docker run -ti -v ~/Download
 
 You can accelerate the build of the docker image with --build-arg NUM_THREADS=number of parallel builds
 
+ - [User inside docker container](https://almat.su/docker-zapusk-protsessa-iz-pod-tekushhego-polzovatelya/) ([about users in Linux](https://sonikelf.ru/polzovatel-root-i-drugie-polzovateli-gruppy-v-linux/)). Example - work_SOLO, my dotmask repo
+
