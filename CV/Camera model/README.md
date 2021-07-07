@@ -6,4 +6,5 @@
 4. [Theory in images](https://docs.exponenta.ru/vision/ug/camera-calibration.html)
 5. [Kinect calibration example](https://habr.com/ru/post/272629/)
 6. [CameraTransform:A Python package for perspective corrections and image mapping](https://www.researchgate.net/publication/336247420_CameraTransform_A_Python_package_for_perspective_corrections_and_image_mapping)
-7. [Visualization](http://ksimek.github.io/2012/08/22/extrinsic/)
+7. [Visualization](http://ksimek.github.io/2012/08/22/extrinsic/)  
+8. https://en.wikipedia.org/wiki/Image_rectification
